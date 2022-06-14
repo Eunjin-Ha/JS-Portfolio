@@ -1,0 +1,74 @@
+{{!-- References
+Header: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp 
+Footer: 
+SNS : https://mdbootstrap.com/docs/standard/extended/social-media/
+
+image : https://www.istockphoto.com/illustrations/woman-software-engineer
+--}}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    {{!-- Link to Bootstrap 4 CSS --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  
+    {{!-- Font Awesome SNS --}}
+    <script src="https://kit.fontawesome.com/62fd5d838c.js" crossorigin="anonymous"></script>
+    {{!-- <script src="/javascripts/index.js" defer ></script> --}}
+
+  </head>
+  <body>
+    <div class="wrapper">
+      {{!-- Header Area --}}
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark bg">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/contactme">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Navbar text-->
+        {{!-- <span class="navbar-text">
+          Navbar text
+        </span> --}}
+      </nav>
+      {{{body}}}
+
+      {{!-- Footer Area --}}
+      <footer>
+        <p>Eunjin Ha</p>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/aaaamyha/" target="_blank">
+          <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+        </a>
+
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/eunjin-ha/" target="_blank" > 
+          <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+        </a>
+
+        <!-- Github -->
+        <a href="https://github.com/Eunjin-Ha" target="_blank"> 
+          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+        </a>
+
+        <p><a href="mailto:heyamy.ha@gmail.com">heyamy.ha@gmail.com</a></p>
+      </footer>
+    </div>
+  </body>
+
+</html>

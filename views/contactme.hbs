@@ -1,0 +1,21 @@
+<h1 class="title">{{title}}</h1>
+<div class="area-contact">
+    <p> Do you have any questions? Please do not hesitate to contact us directly.</p>
+
+    <form id="contact-form" method="POST" action="send" enctype="multipart/form-data">
+        <label>Your Name</label>
+        <input type="text" id="name" name="name" class="form-control" required >
+
+        <label>Your Email</label>
+        <input type="text" id="email" name="email" class="form-control" aria-describedby="emailHelp" required >
+
+        <label>Subject</label>
+        <input type="text" id="subject" name="subject" class="form-control" required >
+
+        <label>Message</label>
+        <textarea type="text" id="message" name="message" class="md-textarea form-control" rows="5" required></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+</div>
+
